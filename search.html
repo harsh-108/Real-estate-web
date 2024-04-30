@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Search Page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts  -->
+
+   <header class="header">
+
+      <nav class="navbar nav-1">
+         <section class="flex">
+            <a href="home.html" class="logo"><i class="fas fa-house"></i>Real-Estate</a>
+
+            <ul>
+               <li><a href="#">Post Property<i class="fas fa-paper-plane"></i></a></li>
+            </ul>
+         </section>
+      </nav>
+
+      <nav class="navbar nav-2">
+         <section class="flex">
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <div class="menu">
+               <ul>
+                  <li><a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Commercial Property</a></li>
+                        <li><a href="#">Residential Land</a></li>
+
+                     </ul>
+                  </li>
+                  <li><a href="#">Sell<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Residential Land</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Commercial Space</a></li>
+                        <li><a href="#">PG/Hostel</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Help<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="about.html">About us</a></i></li>
+                        <li><a href="contact.html">Contact us</a></i></li>
+                        <li><a href="contact.html#faq">FAQ</a></i></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+
+            <ul>
+               <li><a href="#">Saved <i class="far fa-heart"></i></a></li>
+               <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="register.html">Register</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </section>
+      </nav>
+
+   </header>
+
+   <!-- header section ends -->
+
+   <!-- search filter section starts  -->
+
+   <section class="filters" style="padding-bottom: 0;">
+
+      <form action="" method="post">
+         <div id="close-filter"><i class="fas fa-times"></i></div>
+         <h3>Filter your search</h3>
+
+         <div class="flex">
+            <div class="box">
+               <p>Enter location</p>
+               <input type="text" name="location" required maxlength="50" placeholder="Enter city name" class="input">
+            </div>
+            <div class="box">
+               <p>Offer type</p>
+               <select name="offer" class="input" required>
+                  <option value="sale">Sale</option>
+                  <option value="resale">Resale</option>
+                  <option value="rent">Rent</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Property type</p>
+               <select name="type" class="input" required>
+                  <option value="flat">Flat</option>
+                  <option value="house">House</option>
+                  <option value="shop">Shop</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Select BHK</p>
+               <select name="bhk" class="input" required>
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3">3 BHK</option>
+                  <option value="4">4 BHK</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Maximum Budget</p>
+               <select name="minimum" class="input" required>
+                  <option value="5000000">5 lac</option>
+                  <option value="1000000">10 lac</option>
+                  <option value="2000000">20 lac</option>
+                  <option value="3000000">30 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="5000000">50 lac</option>
+                  <option value="6000000">60 lac</option>
+                  <option value="7000000">70 lac</option>
+                  <option value="8000000">80 lac</option>
+                  <option value="9000000">90 lac</option>
+                  <option value="10000000">1 Cr</option>
+                  <option value="20000000">2 Cr</option>
+                  <option value="30000000">3 Cr</option>
+                  <option value="40000000">4 Cr</option>
+                  <option value="50000000">5 Cr</option>
+                  <option value="60000000">6 Cr</option>
+                  <option value="70000000">7 Cr</option>
+                  <option value="80000000">8 Cr</option>
+                  <option value="90000000">9 Cr</option>
+                  <option value="100000000">10 Cr</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>maximum budget</p>
+               <select name="maximum" class="input" required>
+                  <option value="5000000">5 lac</option>
+                  <option value="1000000">10 lac</option>
+                  <option value="2000000">20 lac</option>
+                  <option value="3000000">30 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="5000000">50 lac</option>
+                  <option value="6000000">60 lac</option>
+                  <option value="7000000">70 lac</option>
+                  <option value="8000000">80 lac</option>
+                  <option value="9000000">90 lac</option>
+                  <option value="10000000">1 Cr</option>
+                  <option value="20000000">2 Cr</option>
+                  <option value="30000000">3 Cr</option>
+                  <option value="40000000">4 Cr</option>
+                  <option value="50000000">5 Cr</option>
+                  <option value="60000000">6 Cr</option>
+                  <option value="70000000">7 Cr</option>
+                  <option value="80000000">8 Cr</option>
+                  <option value="90000000">9 Cr</option>
+                  <option value="100000000">10 Cr</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>status</p>
+               <select name="status" class="input" required>
+                  <option value="ready to move">Ready to move</option>
+                  <option value="under construction">Under Construction</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Furnished</p>
+               <select name="furnished" class="input" required>
+                  <option value="unfurnished">Unfurnished</option>
+                  <option value="furnished">Furnished</option>
+                  <option value="semi-furnished">Semi-furnished</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="search property" name="search" class="btn">
+      </form>
+
+   </section>
+
+   <!-- search filter section ends -->
+
+   <div id="filter-btn" class="fas fa-filter"></div>
+
+   <!-- listings section starts  -->
+
+   <section class="listings">
+
+      <h1 class="heading">Search results</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="admin">
+               <h3>R</h3>
+               <div>
+                  <p>Raj</p>
+                  <span>10-04-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>Flat</span><span>Sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="Prestige-Elysian.png" alt="">
+            </div>
+            <h3 class="name">3 BHK Flat in Prestige Elysian</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bannerghatta Main Road, Bengaluru, Karnataka 560076</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>3</span></p>
+               <p><i class="fas fa-maximize"></i><span>1150 sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">View Property</a>
+         </div>
+
+         <div class="box">
+            <div class="admin">
+               <h3>K</h3>
+               <div>
+                  <p>Karan</p>
+                  <span>05-04-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>Flat</span><span>Sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="Mantri-Pinnacle.png" alt="">
+            </div>
+            <h3 class="name">3 BHK Flat in Mantri Pinnacle</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Cave Temple Road, Hulimavu, Bengaluru, Karnataka 560076</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>3</span></p>
+               <p><i class="fas fa-maximize"></i><span>1400 sqft</span></p>
+            </div>
+            <a href="view_property1.html" class="btn">view property</a>
+         </div>
+
+         <div class="box">
+            <div class="admin">
+               <h3>G</h3>
+               <div>
+                  <p>Gaurav</p>
+                  <span>10-04-2024</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>Flat</span><span>Sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="Prestige-Lake.png" alt="">
+            </div>
+            <h3 class="name">3 BHK Flat in Prestige Lake Ridge Phase 2</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Bengaluru, Karnataka - 560061</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>3</span></p>
+               <p><i class="fas fa-maximize"></i><span>1750sqft</span></p>
+            </div>
+            <a href="view_property2.html" class="btn">view property</a>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- listings section ends -->
+
+   <!-- footer section starts  -->
+
+   <footer class="footer">
+
+      <section class="flex">
+
+         <div class="box">
+            <a href="tel:1234567890"><i class="fas fa-phone"></i><span>1234567890</span></a>
+            <a href="tel:1234567890"><i class="fas fa-phone"></i><span>0987654321</span></a>
+            <a href="mailto:123@gmail.com"><i class="fas fa-envelope"></i><span>123@gmail.com</span></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Bengaluru, Karnataka - 560076</span></a>
+         </div>
+
+         <div class="box">
+            <a href="home.html"><span>Home</span></a>
+            <a href="about.html"><span>About</span></a>
+            <a href="contact.html"><span>Contact</span></a>
+            <a href="listings.html"><span>All listings</span></a>
+            <a href="#"><span>Saved properties</span></a>
+            <a href="#"><span>Careers</span></a>
+         </div>
+
+         <div class="box">
+            <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+            <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+         </div>
+
+      </section>
+
+      <div class="credit">&copy; copyright 2024 <span>Pushkar Garg</span> | All rights reserved</div>
+
+   </footer>
+
+   <!-- footer section ends -->
+
+
+   <!-- custom js file link  -->
+   <script src="script.js"></script>
+
+   <script>
+
+      document.querySelector('#filter-btn').onclick = () => {
+         document.querySelector('.filters').classList.add('active');
+      }
+
+      document.querySelector('#close-filter').onclick = () => {
+         document.querySelector('.filters').classList.remove('active');
+      }
+
+   </script>
+
+</body>
+
+</html>
